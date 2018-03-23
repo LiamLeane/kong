@@ -233,7 +233,7 @@ do
     end
 
     if is_already_partitioned(column_definitions) then
-      return nil, fmt("The table '%s' is already partitioned", table_name)
+      return nil
     end
 
     local aux_table_name = "aux_for_partition_of_" .. table_name
